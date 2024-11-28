@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../CSS/login-form.css" /> 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- box icon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- remix icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+/>
+    <!--  google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo">Flow<span>er</span>-<span>G</span>irl</a>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page</a></li>
+          <li class="dropdown">
+              <a class="btn dropdown-toggle" href="#" role="button" style="padding: 0px;">Shop</a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                  <li><a class="dropdown-item" href="#">Shop 2</a></li>
+              </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+        <div class="nav-right">
+            <a href="#"><i class="ri-user-line"></i></a>
+            <a href="#"><i class="ri-shopping-bag-4-line"></i></i></a>
+            <a href="#"><i class="ri-login-box-line"></i></i></a>
+            <div class="bx bx-menu" id="menu-icon">
+            </div>
+        </div>
+    </header>
+    <!-- Home --> 
+     <section class="banner">
+        <div class="banner-contain">
+            <div class="banner-text">
+                <h1>LOGING FORM</h1>
+            </div>
+        </div>
+        <div class="form-login">
+            <div class="box-form p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row">
+                <div class="container text-start">
+                    <div class="row shadow-lg p-1 mb-5 bg-body-tertiary rounded">
+                      <div class="col bg-white border-0" >
+                        <form id="form">
+                            <div class="text-more my-3 fs-4 text-center">
+                                <h1>Login</h1>
+                                <hr>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                              <span style="color: red;" id="email_error"></span>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="Password">
+                              <span style="color: red;" id="password_error"></span>
+                            </div>
+                            <div class="mb-3 form-check ">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampl eCheck1">Remember Me</label>
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-primary w-100">Submit</button>
+                          
+                          </form>
+                          <div class="more-box ">
+                            <div class="text-more my-3 fs-4 text-center">
+                                <p>Or</p>
+                                <hr>
+                            </div>
+                            <div class="box-more p-3 m-0 border-0 bd-example m-0 border-0">
+                                <div class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-registered" style="color: rgb(13, 10, 65);"></i></span>
+                                    <button type="text" class="form-control text-center " placeholder="Login With Facebook" aria-label="Username" disabled>Register</button>
+                                  </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text " id="basic-addon1"><i class="fa-brands fa-square-facebook " style="color: rgb(57, 57, 219);"></i></span>
+                                        <button type="text" class="form-control text-center " placeholder="Login With Facebook" aria-label="Username" disabled>Facebook</button>
+                                      </div>
+
+                                      <div class="input-group  mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-brands fa-square-instagram" style="color: rgb(200, 28, 83);"></i></span>
+                                        <button type="text" class="form-control text-center " placeholder="Login With Facebook" aria-label="Username" disabled>Instagram</button>
+                                      </div>
+
+                                      <div class="input-group  mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa-brands fa-square-whatsapp" style="color: rgb(43, 117, 53);"></i></span>
+                                        <button type="text" class="form-control text-center" placeholder="Login With Facebook" aria-label="Username" disabled>Whatapp</button>
+                                      </div>
+                                    </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col order-5 border-0" style="background-color: palevioletred;">
+                            <div class="text-secondbox text-center p-5 text-white">
+                             <div class="ttext">
+                              <img src="../img/A5.png" alt="" style="width: 100%; height: auto; padding-bottom: 20px;">
+                              <h1>Welcome To Our<br>Loign Form.</h1>
+                              <p>If you don't have account <br> Please Register.</p>
+                              <p>Thank you!!</p>
+                             </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+     </section>
+<!-- footer -->
+<section class="footer">
+  <div class="footer-box">
+      <h3>Flower</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Rem minus tempora, harum cupiditate.</p>
+      <div class="icons">
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-wechat-2-fill"></i></a>
+          <a href="#"><i class="ri-telegram-fill"></i></a>
+      </div>
+  </div>
+  <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#">Product Guide</a>
+      <a href="#">Term & Condition</a>
+      <a href="#">Deliviry Policy</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Feedback</a>
+  </div>
+  <div class="footer-box">
+      <h3>Company</h3>
+      <a href="#">About us</a>
+      <a href="#">Our Gallery</a>
+      <a href="#">Our Shop</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Our Blog</a>
+  </div>
+  <div class="footer-box">
+      <h3>Help</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Wechart</a>
+      <a href="#">Telegram</a>
+  </div>
+</section>
+
+<!-- copyright -->
+<section class="copyright">
+  <div class="end-text">
+      <p>copyright @2024 Flower, All right reserve by Flower</p>
+  </div>
+  <div class="end-img">
+      <img src="../img/payment.png" alt="">
+  </div>
+  <a href="#" class="top"><i class="ri-skip-up-line"></i></a>
+</section>
+    <!-- Js file link -->
+     <script src="../JS/Loging.js"></script>
+    <script src="../JS/Home-page.js"></script>
+  </body>
+
+
+
+</html>
